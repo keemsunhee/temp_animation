@@ -1,0 +1,498 @@
+@charset "utf-8";
+@import "reset.css";
+@import "tab-menu--fixed.css";
+@import "swiper-custom.css";
+@import "toggle-box.css";
+
+/* img-box */
+.img-box {
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  height: 20vw;
+  background: #a49172;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20vw;
+  color: #fff;
+}
+
+.term {
+  height: 5vw;
+  background-color: #fff;
+  text-align: center;
+}
+/* 빙수투어 */
+.top_motion {
+  position: relative;
+  height: 235.73vw;
+  background-image: url("../images/bg/top.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.top_motion ul {
+  position: absolute;
+  width: 100%;
+  height: 235.73vw;
+  overflow: hidden;
+}
+
+.top_motion .snow1 {
+  position: absolute;
+  top: 116vw;
+  right: 6vw;
+  width: 17vw;
+  height: 17vw;
+  animation: opa 1s ease-in-out infinite alternate;
+}
+.top_motion .snow2 {
+  position: absolute;
+  bottom: -4vw;
+  right: 24vw;
+  width: 23vw;
+  height: 23vw;
+  animation: opa 1s 0.5s ease-in-out infinite alternate;
+}
+.top_motion .snow3 {
+  position: absolute;
+  top: 166vw;
+  left: -10vw;
+  width: 34vw;
+  height: 34vw;
+  animation: opa 1.2s 0.5s ease-in-out infinite alternate;
+}
+
+.pick_wrap img:nth-child(1) {
+  width: 5vw;
+  height: 0.5vw;
+  min-height: 6px;
+}
+
+.pick_wrap img:nth-child(2) {
+  width: 6.16vw;
+  height: 9vw;
+}
+
+.pick_wrap img:nth-child(3) {
+  height: 5.5vw;
+}
+/* 1 */
+#shadow1 {
+  position: absolute;
+  left: 34.5vw;
+  top: 141.73vw;
+  transform: translateX(-50%);
+}
+
+#pick1 {
+  position: absolute;
+  left: 31.5vw;
+  top: 133.7vw;
+}
+
+#name1 {
+  position: absolute;
+  left: 24.5vw;
+  top: 126.9vw;
+  width: 20vw;
+}
+/* 2 */
+#shadow2 {
+  position: absolute;
+  left: 50vw;
+  top: 154.73vw;
+  transform: translateX(-50%);
+}
+
+#pick2 {
+  position: absolute;
+  left: 46.9vw;
+  top: 146.6vw;
+}
+
+#name2 {
+  position: absolute;
+  left: 54vw;
+  top: 148.6vw;
+  width: 15vw;
+}
+.motion_box div {
+  position: absolute;
+  z-index: 20;
+}
+/* 3 */
+#shadow3 {
+  position: absolute;
+  left: 49vw;
+  top: 178.1vw;
+  transform: translateX(-50%);
+}
+
+#pick3 {
+  position: absolute;
+  left: 46vw;
+  top: 169.9vw;
+}
+
+#name3 {
+  position: absolute;
+  left: 41.7vw;
+  top: 180.5vw;
+  width: 15vw;
+}
+/* 4 */
+#shadow4 {
+  position: absolute;
+  left: 81vw;
+  top: 190.5vw;
+  transform: translateX(-50%);
+}
+
+#pick4 {
+  position: absolute;
+  right: 16vw;
+  top: 182vw;
+}
+
+#name4 {
+  position: absolute;
+  left: 71.7vw;
+  top: 175.5vw;
+  width: 17vw;
+}
+/* 5 */
+#shadow5 {
+  position: absolute;
+  left: 65.4vw;
+  top: 191.3vw;
+  transform: translateX(-50%);
+}
+
+#pick5 {
+  position: absolute;
+  right: 31.5vw;
+  top: 183vw;
+}
+
+#name5 {
+  position: absolute;
+  left: 52vw;
+  top: 193.6vw;
+  width: 17vw;
+}
+/* 6 */
+#shadow6 {
+  position: absolute;
+  right: 17.4vw;
+  top: 200vw;
+  transform: translateX(-50%);
+}
+
+#pick6 {
+  position: absolute;
+  right: 19.5vw;
+  top: 191.6vw;
+}
+
+#name6 {
+  position: absolute;
+  right: 3vw;
+  top: 193.6vw;
+  width: 14vw;
+}
+
+/* 7 */
+#shadow7 {
+  position: absolute;
+  left: 43vw;
+  top: 155.5vw;
+  transform: translateX(-50%);
+}
+
+#pick7 {
+  position: absolute;
+  left: 40vw;
+  top: 147.1vw;
+  z-index: 30;
+}
+
+#name7 {
+  position: absolute;
+  left: 42.8vw;
+  top: 157.5vw;
+  width: 22vw;
+}
+
+/* 8 */
+#shadow8 {
+  position: absolute;
+  left: 34.6vw;
+  top: 152.5vw;
+  transform: translateX(-50%);
+}
+
+#pick8 {
+  position: absolute;
+  left: 31.5vw;
+  top: 144.3vw;
+}
+#name8 {
+  position: absolute;
+  left: 3.7vw;
+  top: 151.5vw;
+  width: 29vw;
+}
+
+/* 9 */
+#shadow9 {
+  position: absolute;
+  left: 42.6vw;
+  top: 143vw;
+  transform: translateX(-50%);
+}
+
+#pick9 {
+  position: absolute;
+  left: 39.6vw;
+  top: 134.8vw;
+}
+
+#name9 {
+  position: absolute;
+  left: 46.7vw;
+  top: 135.5vw;
+  width: 23vw;
+}
+
+/* 10 */
+#shadow10 {
+  position: absolute;
+  left: 38.6vw;
+  top: 162.6vw;
+  transform: translateX(-50%);
+}
+
+#pick10 {
+  position: absolute;
+  left: 35.4vw;
+  top: 154.6vw;
+}
+
+#name10 {
+  position: absolute;
+  left: 20.7vw;
+  top: 164.9vw;
+  width: 25vw;
+}
+/* 11 */
+#shadow11 {
+  position: absolute;
+  right: 23.6vw;
+  top: 203.9vw;
+  transform: translateX(-50%);
+}
+
+#pick11 {
+  position: absolute;
+  left: 68.3vw;
+  top: 195.7vw;
+}
+
+#name11 {
+  position: absolute;
+  right: 15.7vw;
+  top: 206vw;
+  width: 22vw;
+}
+
+.motion_box div {
+  position: absolute;
+  z-index: 20;
+}
+
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7,
+.wrapper8,
+.wrapper9,
+.wrapper10,
+.wrapper11 {
+  position: relative !important;
+}
+/* 테니스 */
+
+.top_motion2 {
+  position: relative;
+  height: 173.73vw;
+  background-image: url("../images/bgbg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.top_motion2 li {
+  width: 9.86vw;
+  height: 9.86vw;
+}
+.top_motion2 li:first-of-type {
+  position: absolute;
+  top: 9.73vw;
+  right: 27.5vw;
+}
+.top_motion2 li:last-of-type {
+  position: absolute;
+  top: 23vw;
+  right: 10vw;
+}
+
+#ball1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(-55.44deg);
+  width: 7.46vw;
+  height: 7.46vw;
+}
+#shadow100 {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 7vw;
+  bottom: 1.8vw;
+}
+
+#ball2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.46vw;
+  height: 7.46vw;
+}
+#shadow200 {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 7vw;
+  bottom: 1.8vw;
+}
+
+/* 글씨쓰기 */
+.ttxt {
+  position: relative;
+  height: 18vw;
+  background-color: #000;
+}
+.txt-wrap {
+  position: absolute;
+  margin-left: 6vw;
+  width: 0;
+  animation: text-animation 3s linear 0s infinite forwards;
+  overflow: hidden;
+}
+
+.txt-wrap img {
+  width: 90vw;
+}
+@keyframes text-animation {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 90vw;
+  }
+  99% {
+    width: 90vw;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* lp-box */
+.lp-box {
+  position: absolute;
+  left: 50%;
+  top: 10vw;
+  transform: translateX(-50%);
+}
+.lp-shadow {
+  width: 65.8666vw;
+  position: absolute;
+  left: 50%;
+  top: 23.5vw;
+  transform: translateX(-50%);
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+.lp {
+  width: 86.5333vw;
+  position: absolute;
+  left: 50%;
+  top: 12.5vw;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.lp-center {
+  width: 17.6vw;
+  position: absolute;
+  left: 50%;
+  top: 47vw;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.tonearm {
+  width: 24.1333vw;
+  position: absolute;
+  right: 13vw;
+  top: 22vw;
+  z-index: 3;
+}
+
+/* 공 날아오는 모션 */
+.swiper1 {
+  height: 204.93vw !important;
+  position: relative;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  top: 8vw !important;
+}
+
+.text {
+  position: absolute;
+  z-index: 111;
+  width: 68.4vw;
+  height: 93.33vw;
+  top: 17.33vw;
+  left: 16vw;
+}
+
+.ball {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  left: calc(150%);
+  bottom: 150vw;
+  z-index: 1111;
+  transform: translateX(-50%);
+  /* transform: scale(0.5); */
+}
+.shadow {
+  position: absolute;
+  width: 44.26vw;
+  height: 15.86vw;
+  bottom: 20vw;
+  left: 50%;
+  z-index: 1111;
+  transform: translateX(-50%);
+}

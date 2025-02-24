@@ -2,14 +2,487 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>이벤트</title>
+
+    <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/ga4Event.js"></script>
+    <script src="./js/link.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+
+    <script type="text/javascript">
+      // app 공통스크립트 start
+      // 2023.11.09 수정
+      function APP_EVENT(label, addInfo) {
+        // <!-- TODO lable : 버튼명, addInfo : 이벤트 부가정보 -->
+        ga4Event.event(
+          "click_event",
+          "APP_쇼핑뉴스상세",
+          "하단버튼",
+          label,
+          addInfo
+        );
+      }
+      // app 공통스크립트 end
+
+      $(document).ready(function () {
+        // 스킴 : lottecoupon://gate?page=a0240&url=
+        LinkSetting("link1", "BrowserOpen", "yes", ""); //
+      });
+    </script>
   </head>
+
   <body>
-    <div>animation</div>
-    <script src="./js/animation.js"></script>
+    <!-- eventBox [S] -->
+    <div class="eventBox">
+      <div class="title">기존 작업 정리</div>
+      <div class="term">1.깜빡임, 위아래 이동 모션</div>
+      <!-- 빙수 -->
+      <div class="img_box">
+        <div class="top_motion">
+          <ul class="snow_box">
+            <li class="snow1">
+              <img src="./images/top/snow1.png" />
+            </li>
+            <li class="snow2">
+              <img src="./images/top/snow2.png" />
+            </li>
+            <li class="snow3">
+              <img src="./images/top/snow3.png" />
+            </li>
+          </ul>
+          <ul class="pick_box">
+            <li class="pick_wrap">
+              <img id="shadow1" src="./images/top/shadow.png" />
+              <img id="pick1" src="./images/top/1.png" />
+              <img id="name1" src="./images/top/_1.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow2" src="./images/top/shadow.png" />
+              <img id="pick2" src="./images/top/2.png" />
+              <img id="name2" src="./images/top/_2.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow3" src="./images/top/shadow.png" />
+              <img id="pick3" src="./images/top/3.png" />
+              <img id="name3" src="./images/top/_3.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow4" src="./images/top/shadow.png" />
+              <img id="pick4" src="./images/top/4.png" />
+              <img id="name4" src="./images/top/_4.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow5" src="./images/top/shadow.png" />
+              <img id="pick5" src="./images/top/5.png" />
+              <img id="name5" src="./images/top/_5.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow6" src="./images/top/shadow.png" />
+              <img id="pick6" src="./images/top/6.png" />
+              <img id="name6" src="./images/top/_6.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow7" src="./images/top/shadow.png" />
+              <img id="pick7" src="./images/top/7.png" />
+              <img id="name7" src="./images/top/_7.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow8" src="./images/top/shadow.png" />
+              <img id="pick8" src="./images/top/8.png" />
+              <img id="name8" src="./images/top/_8.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow9" src="./images/top/shadow.png" />
+              <img id="pick9" src="./images/top/9.png" />
+              <img id="name9" src="./images/top/_9.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow10" src="./images/top/shadow.png" />
+              <img id="pick10" src="./images/top/10.png" />
+              <img id="name10" src="./images/top/_10.png" />
+            </li>
+            <li class="pick_wrap">
+              <img id="shadow11" src="./images/top/shadow.png" />
+              <img id="pick11" src="./images/top/11.png" />
+              <img id="name11" src="./images/top/_11.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="term">2. 공 튀기는 모션</div>
+      <!-- 테니스 -->
+      <div class="top_motion2">
+        <ul>
+          <li class="ball1">
+            <img id="shadow100" src="./images/shadow.png" alt="" />
+            <img id="ball1" src="./images/ball.png" alt="" />
+          </li>
+          <li class="ball2">
+            <img id="shadow200" src="./images/shadow.png" alt="" />
+            <img id="ball2" src="./images/ball.png" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="term">3. 글씨쓰기</div>
+      <!-- 글씨 쓰기 -->
+      <div class="ttxt">
+        <div class="txt-wrap"><img src="./images/txt.png" /></div>
+      </div>
+      <div class="term">4. 회전</div>
+      <!-- LP -->
+      <div class="img-box">
+        <img src="./images/img_01.jpg" />
+        <img class="lp-shadow" src="./images/lp-shadow.png" />
+        <img class="lp" src="./images/lp.png" />
+        <img class="lp-center" src="./images/lp_center.png" />
+        <img class="tonearm" src="./images/tonearm.png" />
+      </div>
+      <div class="term">5</div>
+      <!--  -->
+    </div>
+    <!-- // eventBox [E] -->
   </body>
+
+  <script src="./js/common.js"></script>
+  <script>
+    $(document).ready(function () {
+      //빙수
+
+      //1
+      var tl = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1 });
+      tl.to("#pick1", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" }).to(
+        "#pick1",
+        0.7,
+        { ease: Power4.easeOut, marginTop: "0vw" }
+      );
+
+      var tl2 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1 });
+      tl2
+        .to("#shadow1", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow1", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl3 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1 });
+      tl3
+        .to("#name1", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name1", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      //2
+      var t4 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.3 });
+      t4.to("#pick2", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" }).to(
+        "#pick2",
+        0.7,
+        { ease: Power4.easeOut, marginTop: "0vw" }
+      );
+
+      var tl5 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.3 });
+      tl5
+        .to("#shadow2", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow2", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl6 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.3 });
+      tl6
+        .to("#name2", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name2", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      //3
+      var t7 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.6 });
+      t7.to("#pick3", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" }).to(
+        "#pick3",
+        0.7,
+        { ease: Power4.easeOut, marginTop: "0vw" }
+      );
+
+      var tl8 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.6 });
+      tl8
+        .to("#shadow3", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow3", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl9 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.6 });
+      tl9
+        .to("#name3", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name3", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      //4
+      var t10 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.9 });
+      t10
+        .to("#pick4", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick4", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl11 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.9 });
+      tl11
+        .to("#shadow4", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow4", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl12 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 1.9 });
+      tl12
+        .to("#name4", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name4", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 5
+      var t13 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.2 });
+      t13
+        .to("#pick5", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick5", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl14 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.2 });
+      tl14
+        .to("#shadow5", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow5", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl15 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.2 });
+      tl15
+        .to("#name5", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name5", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 6
+      var t16 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.5 });
+      t16
+        .to("#pick6", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick6", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl17 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.5 });
+      tl17
+        .to("#shadow6", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow6", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl18 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.5 });
+      tl18
+        .to("#name6", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name6", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 7
+      var t19 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.8 });
+      t19
+        .to("#pick7", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick7", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl20 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.8 });
+      tl20
+        .to("#shadow7", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow7", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl21 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 2.8 });
+      tl21
+        .to("#name7", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name7", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 8
+      var t22 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.1 });
+      t22
+        .to("#pick8", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick8", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl23 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.1 });
+      tl23
+        .to("#shadow8", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow8", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl24 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.1 });
+      tl24
+        .to("#name8", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name8", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 9
+      var t25 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.4 });
+      t25
+        .to("#pick9", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick9", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl26 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.4 });
+      tl26
+        .to("#shadow9", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow9", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl27 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.4 });
+      tl27
+        .to("#name9", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name9", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 10
+      var t28 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.9 });
+      t28
+        .to("#pick10", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick10", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl29 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.9 });
+      tl29
+        .to("#shadow10", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow10", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl30 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 3.9 });
+      tl30
+        .to("#name10", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name10", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      // 11
+      var t31 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 4.2 });
+      t31
+        .to("#pick11", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#pick11", 0.7, { ease: Power4.easeOut, marginTop: "0vw" });
+
+      var tl32 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 4.2 });
+      tl32
+        .to("#shadow11", 0.03, { ease: Power4.easeOut, width: "7vw" })
+        .to("#shadow11", 0.7, {
+          ease: Power4.easeOut,
+          width: "5vw",
+          delay: 0.2,
+        });
+
+      var tl33 = new TimelineMax({ repeat: -1, repeatDelay: 4.9, delay: 4.2 });
+      tl33
+        .to("#name11", 0.03, { ease: Power4.easeOut, opacity: 0 })
+        .to("#name11", 0.7, {
+          ease: Power4.easeOut,
+          opacity: 1,
+          delay: 0.2,
+        });
+
+      //테니스
+      var tl100 = new TimelineMax({ repeat: -1, repeatDelay: 1.5, delay: 1.3 });
+      tl100
+        .to("#ball1", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#ball1", 0.7, { ease: Bounce.easeOut, marginTop: "0vw" });
+
+      var tl200 = new TimelineMax({ repeat: -1, repeatDelay: 1.5, delay: 1.3 });
+      tl200
+        .to("#shadow100", 0.03, { ease: Power0.easeOut, width: "4.5vw" })
+        .to("#shadow100", 0.7, {
+          ease: Bounce.easeOut,
+          width: "7vw",
+          delay: 0.2,
+        });
+
+      var tl300 = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+      tl300
+        .to("#ball2", 0.23, { ease: Power4.easeOut, marginTop: "-7vw" })
+        .to("#ball2", 0.7, { ease: Bounce.easeOut, marginTop: "0vw" });
+
+      var tl400 = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+      tl400
+        .to("#shadow200", 0.03, { ease: Power0.easeOut, width: "4.5vw" })
+        .to("#shadow200", 0.7, {
+          ease: Bounce.easeOut,
+          width: "7vw",
+          delay: 0.2,
+        });
+
+      //LP
+      gsap.to(".lp", {
+        repeat: -1,
+        ease: Linear.easeNone,
+        rotation: 360,
+        duration: 5,
+      });
+
+      setTimeout(function () {
+        var parentIframe = $("#container", parent.document).find("iframe"),
+          iframeHeight = $(".eventBox").innerHeight();
+
+        $(parentIframe)
+          .height(iframeHeight + 17)
+          .css("min-height", "auto");
+      }, 100);
+      return false;
+    });
+
+    function iframeHeightSize() {
+      var parentIframe = $("#container", parent.document).find("iframe"),
+        iframeHeight = $(".eventBox").innerHeight();
+
+      $(parentIframe)
+        .height(iframeHeight + 17)
+        .css("min-height", "auto");
+    }
+  </script>
 </html>
