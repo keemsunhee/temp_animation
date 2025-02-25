@@ -419,6 +419,10 @@
 .lplp {
   margin: 0 auto;
 }
+
+.bgbg {
+  width: 100%;
+}
 .lp-box {
   position: absolute;
   left: 50%;
